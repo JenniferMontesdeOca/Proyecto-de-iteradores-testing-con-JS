@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Corrector Gramatical</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Corrector Gramatical</h1>
+
+    <label for="input-story">Texto original:</label>
+    <textarea id="input-story" rows="10" placeholder="Escribe o pega aquí tu historia..."></textarea>
+    
+    <button id="process-btn">Corregir historia</button>
+
+    <div id="result" style="display: none;">
+      <h2>Versión Editada:</h2>
+      <p id="edited-story"></p>
+      <h3>Total de palabras: <span id="word-count"></span></h3>
+      <h3>¿Todas las palabras tienen 10 caracteres o menos? <span id="length-check"></span></h3>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
